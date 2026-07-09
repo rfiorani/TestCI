@@ -1,6 +1,10 @@
 name: gitlab-ci
 
-on: [ pull_request, workflow_dispatch ]
+on:
+  pull_request:
+  push:
+    branches:
+      - main
 
 jobs:
   gitlab-ci:
